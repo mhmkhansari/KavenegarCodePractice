@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Kavehnegar.Shared.Framework\Kavehnegar.Shared.Framework.csproj" />
+  </ItemGroup>
+
 </Project>
