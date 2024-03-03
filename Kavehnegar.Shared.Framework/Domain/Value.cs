@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kavehnegar.Shared.Framework
+namespace Kavehnegar.Shared.Framework.Domain
 {
     public abstract class Value<T> where T : Value<T>
     {
@@ -25,7 +25,7 @@ namespace Kavehnegar.Shared.Framework
                 var thisValue = m.GetValue(this);
                 return m.IsNonStringEnumerable
                     ? GetEnumerableValues(otherValue).SequenceEqual(GetEnumerableValues(thisValue))
-                    : (otherValue?.Equals(thisValue) ?? thisValue == null);
+                    : otherValue?.Equals(thisValue) ?? thisValue == null;
             });
         }
 

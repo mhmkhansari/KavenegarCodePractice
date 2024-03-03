@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Kavehnegar.Core.Domain.User
 {
-    internal class User
+    public class User  
     {
     }
 }

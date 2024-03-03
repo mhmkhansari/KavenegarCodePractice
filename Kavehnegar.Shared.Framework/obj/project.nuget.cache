@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "NJSfT7udw9izlv3jC/Lzf3oAW4dU1EiM626UfmSGLKsjD0Qyl1+nWiOanyF39ll+wwhQfNzIBKbVLMMOi4bH2Q==",
+  "dgSpecHash": "PcAb8hDWTq7EUaLFOilTDWxQEmdOMooqKjEZ8tEfRAt0KwpKWBUay5wwnHMcrp+C22DJKpltKjdSgZyQzyh34g==",
   "success": true,
   "projectFilePath": "C:\\Games\\Kavehnegar\\Kavehnegar.Shared.Framework\\Kavehnegar.Shared.Framework.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\pc\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

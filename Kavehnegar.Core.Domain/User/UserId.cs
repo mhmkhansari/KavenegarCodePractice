@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Kavehnegar.Shared.Framework;
+using Kavehnegar.Shared.Framework.Domain;
 namespace Kavehnegar.Core.Domain.User
 {
-    internal class UserId : Value<UserId>
+    public class UserId : Value<UserId>
     {
         public Guid Value { get; private set; } // Changed setter to private for immutability
 

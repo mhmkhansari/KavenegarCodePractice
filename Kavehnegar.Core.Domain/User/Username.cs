@@ -1,4 +1,4 @@
-﻿using Kavehnegar.Shared.Framework;
+﻿using Kavehnegar.Shared.Framework.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;

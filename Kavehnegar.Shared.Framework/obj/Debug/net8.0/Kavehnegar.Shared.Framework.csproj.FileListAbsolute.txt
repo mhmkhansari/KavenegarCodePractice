@@ -10,3 +10,4 @@ C:\Games\Kavehnegar\Kavehnegar.Shared.Framework\obj\Debug\net8.0\Kavehnegar.Shar
 C:\Games\Kavehnegar\Kavehnegar.Shared.Framework\obj\Debug\net8.0\refint\Kavehnegar.Shared.Framework.dll
 C:\Games\Kavehnegar\Kavehnegar.Shared.Framework\obj\Debug\net8.0\Kavehnegar.Shared.Framework.pdb
 C:\Games\Kavehnegar\Kavehnegar.Shared.Framework\obj\Debug\net8.0\ref\Kavehnegar.Shared.Framework.dll
+C:\Games\Kavehnegar\Kavehnegar.Shared.Framework\obj\Debug\net8.0\Kavehnegar.Shared.Framework.csproj.AssemblyReference.cache

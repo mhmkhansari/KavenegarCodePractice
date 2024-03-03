@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Kavehnegar.External.Presentation.props" />
+</Project>
