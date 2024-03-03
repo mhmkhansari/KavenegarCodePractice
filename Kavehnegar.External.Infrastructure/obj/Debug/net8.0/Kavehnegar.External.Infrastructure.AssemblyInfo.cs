@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kavehnegar.External.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a7bf9d3d9934c1ad0d28dbb1096f84b66dea618")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bdd675402db9ee9ff6e44d0159581a7cc516d54c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kavehnegar.External.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kavehnegar.External.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

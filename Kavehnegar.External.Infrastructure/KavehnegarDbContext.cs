@@ -1,7 +1,9 @@
 ﻿using Kavehnegar.Core.Domain.BlogPost;
 using Kavehnegar.Core.Domain.User;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 namespace Kavehnegar.External.Infrastructure
 {
@@ -35,6 +37,7 @@ namespace Kavehnegar.External.Infrastructure
                     .Property(x => x.Value).HasColumnName("Title");
                 builder.OwnsOne(x => x.Description)
                     .Property(x => x.Value).HasColumnName("Description");
+                builder.HasOne(x => x.Author).WithMany().HasForeignKey(x => x.authorId);
 
             }
         }
@@ -52,6 +55,21 @@ namespace Kavehnegar.External.Infrastructure
                 builder.Property(p => p.Id).HasConversion(informationId => informationId.Value, dbId => new UserId(dbId));
                 builder.OwnsOne(x => x.username)
                     .Property(x => x.Value).HasColumnName("Username");
+            }
+        }
+    }
+    public static class AppBuilderDatabaseExtensions
+    {
+        public static void EnsureDatabase(this IApplicationBuilder app)
+        {
+            using (var scope = app.ApplicationServices.CreateScope())
+            {
+                var context = scope.ServiceProvider.GetRequiredService<KavehnegarDbContext>();
+
+                if (!context.Database.EnsureCreated())
+                {
+                    context.Database.Migrate();
+                }
             }
         }
     }
