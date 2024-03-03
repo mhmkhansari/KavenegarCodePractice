@@ -106,3 +106,5 @@ C:\Games\Kavehnegar\UnitTests\obj\Debug\net8.0\ref\UnitTests.dll
 C:\Games\Kavehnegar\UnitTests\bin\Debug\net8.0\MediatR.dll
 C:\Games\Kavehnegar\UnitTests\bin\Debug\net8.0\MediatR.Contracts.dll
 C:\Games\Kavehnegar\UnitTests\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Games\Kavehnegar\UnitTests\bin\Debug\net8.0\FluentValidation.dll
+C:\Games\Kavehnegar\UnitTests\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

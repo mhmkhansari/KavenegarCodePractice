@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "/RnvCfpG56wurrP5VgwvP/WiQtkuZLgIHVz/j1TVzd0YPpmQ2z9RqPgDQyZGOGZNKgJiy0AxGczzrjxqYqe0TQ==",
+  "dgSpecHash": "jilWLPJ6gj58CSLd/ChyOdxOPQtPu/hhrbZtUKhxjIC6eReTZGMW9PfIQeTxdrCYKRnMc9n5QZRCQXl070Y+Zg==",
   "success": true,
   "projectFilePath": "C:\\Games\\Kavehnegar\\Kavehnegar.Core.Application\\Kavehnegar.Core.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\pc\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

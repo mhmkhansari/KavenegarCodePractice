@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Application.Abstractions.Messaging;
+namespace Kavehnegar.Shared.Framework.Application;
 
 public interface IQuery<out TResponse> : IRequest<TResponse>
 {

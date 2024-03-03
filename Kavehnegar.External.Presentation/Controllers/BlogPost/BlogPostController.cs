@@ -11,7 +11,7 @@ namespace Kavehnegar.External.Presentation.Controllers.BlogPost
         /*[ProducesResponseType(typeof(Guid), StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]*/
 
-        public async Task<IActionResult> CreateWebinar([FromBody] CreateBlogPostRequest request, CancellationToken cancellationToken)
+        public async Task<IActionResult> CreateBlogPost([FromBody] CreateBlogPostRequest request, CancellationToken cancellationToken)
         {
             var command = request.Adapt<CreateBlogPostCommand>();
 

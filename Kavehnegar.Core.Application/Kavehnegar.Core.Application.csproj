@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Kavehnegar.Core.Domain\Kavehnegar.Core.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

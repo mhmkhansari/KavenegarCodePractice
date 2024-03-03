@@ -6,6 +6,8 @@ namespace Kavehnegar.External.Infrastructure
 {
     public class KavehnegarDbContext : DbContext
     {
+        public DbSet<BlogPost> BlogPosts { get; set; }
+        public DbSet<User> Users { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 

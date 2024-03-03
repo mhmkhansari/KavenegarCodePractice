@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "d9tmZdsltdA2wXNDY0s4fTKMdSK3JTETO0lpQIOKRF11/kBbAT3vQrtCAGFxDwSJ2UeVHOCoHoemR1BKmK/ydw==",
+  "dgSpecHash": "/T8qWjqJqT1htxFHCl0136DgKPU5HkXX2Kwpb9DRxeIDlcwG6RNJwmVDBHh/0ZMB11/xzfwNZe1KlkA2C4sZKw==",
   "success": true,
   "projectFilePath": "C:\\Games\\Kavehnegar\\UnitTests\\UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pc\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\microsoft.codecoverage\\17.6.0\\microsoft.codecoverage.17.6.0.nupkg.sha512",

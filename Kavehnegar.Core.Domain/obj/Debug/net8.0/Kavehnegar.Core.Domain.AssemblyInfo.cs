@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kavehnegar.Core.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ec89417f0a946fe79e95f5e47b80e53f7f460ba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8f510cc139f6525ffe21c7003cacc93f567fe1e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kavehnegar.Core.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kavehnegar.Core.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "pTRFq6P9epcaXpPw28iQ4fcUPEuK6xm9HNNm2ovcG4sl4xUtqQvx2RCF1/2tXBPt/NJ+VZ6XBsz2vxr1BDSMMA==",
+  "dgSpecHash": "2aKyRqdC8fMz3z0tvFswyD8eDpdGAcW8SBf6gvC6t6HTpLHgW4op7skOPAHrPH2Bl8B8WpaAMYZXuh+VDEds0A==",
   "success": true,
   "projectFilePath": "C:\\Games\\Kavehnegar\\Kavehnegar.External.Presentation\\Kavehnegar.External.Presentation.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\pc\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\mapster\\7.4.0\\mapster.7.4.0.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\mapster.core\\1.2.1\\mapster.core.1.2.1.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",

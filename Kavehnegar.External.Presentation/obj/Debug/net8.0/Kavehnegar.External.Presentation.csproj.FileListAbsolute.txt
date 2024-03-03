@@ -39,3 +39,7 @@ C:\Games\Kavehnegar\Kavehnegar.External.Presentation\obj\Debug\net8.0\refint\Kav
 C:\Games\Kavehnegar\Kavehnegar.External.Presentation\obj\Debug\net8.0\Kavehnegar.External.Presentation.pdb
 C:\Games\Kavehnegar\Kavehnegar.External.Presentation\obj\Debug\net8.0\Kavehnegar.External.Presentation.genruntimeconfig.cache
 C:\Games\Kavehnegar\Kavehnegar.External.Presentation\obj\Debug\net8.0\ref\Kavehnegar.External.Presentation.dll
+C:\Games\Kavehnegar\Kavehnegar.External.Presentation\bin\Debug\net8.0\FluentValidation.dll
+C:\Games\Kavehnegar\Kavehnegar.External.Presentation\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Games\Kavehnegar\Kavehnegar.External.Presentation\bin\Debug\net8.0\Kavehnegar.Core.Domain.dll
+C:\Games\Kavehnegar\Kavehnegar.External.Presentation\bin\Debug\net8.0\Kavehnegar.Core.Domain.pdb

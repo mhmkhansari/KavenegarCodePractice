@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "qKrLfDwvvA6tz6iu9xd7yE4rtzkzbDjFFZTUoOwk8juOm9RfIc5y0/vHdR5M1L9KDQTwF+XH/T1UvhgbQwHBJQ==",
+  "dgSpecHash": "mnCAJXqjqo0ILjUBjnCuhS8KJoePcJvyhp2Mr/WQWRjmV/aiZcMTCWhvrrvlT3Y/SORAeEKyJI5E2ALdIi/grg==",
   "success": true,
   "projectFilePath": "C:\\Games\\Kavehnegar\\Kavehnegar.External.Infrastructure\\Kavehnegar.External.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\pc\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
