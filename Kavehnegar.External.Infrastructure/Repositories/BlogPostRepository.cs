@@ -25,12 +25,12 @@ namespace Kavehnegar.External.Infrastructure.Repositories
 
         public async Task<BlogPost?> Load(BlogPostId id)
         {
-           return await _dbContext.BlogPosts.FindAsync(id.Value);
+           return await _dbContext.BlogPosts.FindAsync(id);
         }
 
         public void Update(BlogPost blogPost)
         {
-            throw new NotImplementedException();
+            _dbContext.BlogPosts.Update(blogPost);
         }
     }
 }
