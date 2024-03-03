@@ -8,8 +8,8 @@ namespace Kavehnegar.External.Presentation.Controllers.BlogPost
     public class BlogPostController : ApiController
     {
         [HttpPost]
-        /*[ProducesResponseType(typeof(Guid), StatusCodes.Status201Created)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]*/
+        [ProducesResponseType(typeof(Guid), StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
 
         public async Task<IActionResult> CreateBlogPost([FromBody] CreateBlogPostRequest request, CancellationToken cancellationToken)
         {

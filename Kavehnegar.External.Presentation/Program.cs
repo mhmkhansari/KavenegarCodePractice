@@ -1,4 +1,7 @@
 
+using Kavehnegar.External.Infrastructure;
+using Microsoft.EntityFrameworkCore;
+
 namespace Kavehnegar.External.Presentation
 {
     public class Program
@@ -6,8 +9,11 @@ namespace Kavehnegar.External.Presentation
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
+            var configuration = builder.Configuration;
             // Add services to the container.
+            builder.Services.AddDbContext<KavehnegarDbContext>(builder =>
+            builder.UseNpgsql(configuration["ConnectionStrings:PostgresDb"]));
+
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
