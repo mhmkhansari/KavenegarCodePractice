@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kavehnegar.External.Presentation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+25676ece51e2c5cc1f21254c7bddbccdf01ed25a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3d3dd77c850ea0f5aabd6d51bcf9dc9aa190e3f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kavehnegar.External.Presentation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kavehnegar.External.Presentation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

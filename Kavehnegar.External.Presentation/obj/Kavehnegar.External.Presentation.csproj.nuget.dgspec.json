@@ -35,6 +35,9 @@
             "projectReferences": {
               "C:\\Games\\Kavehnegar\\Kavehnegar.Core.Domain\\Kavehnegar.Core.Domain.csproj": {
                 "projectPath": "C:\\Games\\Kavehnegar\\Kavehnegar.Core.Domain\\Kavehnegar.Core.Domain.csproj"
+              },
+              "C:\\Games\\Kavehnegar\\Kavehnegar.External.Infrastructure\\Kavehnegar.External.Infrastructure.csproj": {
+                "projectPath": "C:\\Games\\Kavehnegar\\Kavehnegar.External.Infrastructure\\Kavehnegar.External.Infrastructure.csproj"
               }
             }
           }
@@ -48,6 +51,20 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -287,6 +304,10 @@
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
               "target": "Package",
               "version": "[8.0.2, )"
             },

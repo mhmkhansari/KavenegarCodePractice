@@ -7,5 +7,5 @@ using System.Threading.Tasks;
 
 namespace Kavehnegar.Core.Application.BlogPost.Commands.UpdateBlogPostCommand
 {
-    public sealed record UpdateBlogPostCommand(Guid Id,string Title, string? Description) : ICommand<Guid>;
+    public sealed record UpdateBlogPostCommand(Guid id,string Title, string? Description) : ICommand<Guid>;
 }

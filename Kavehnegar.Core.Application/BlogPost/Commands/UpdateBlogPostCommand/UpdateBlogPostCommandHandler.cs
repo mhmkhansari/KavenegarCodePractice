@@ -23,7 +23,7 @@ namespace Kavehnegar.Core.Application.BlogPost.Commands.UpdateBlogPostCommand
 
         public async Task<Guid> Handle(UpdateBlogPostCommand request, CancellationToken cancellationToken)
         {
-            var blogPostId = new BlogPostId(request.Id);
+            var blogPostId = new BlogPostId(request.id);
             var currentBlogPost = await _blogPostRepository.Load(blogPostId);
             if (currentBlogPost != null)
             {

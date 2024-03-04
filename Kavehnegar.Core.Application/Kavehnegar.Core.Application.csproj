@@ -7,7 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="8.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Kavehnegar.Core.Domain\Kavehnegar.Core.Domain.csproj" />
+    <ProjectReference Include="..\Kavehnegar.External.Infrastructure\Kavehnegar.External.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

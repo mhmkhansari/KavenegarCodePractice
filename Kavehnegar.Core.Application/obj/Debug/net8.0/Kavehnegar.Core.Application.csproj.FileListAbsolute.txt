@@ -16,3 +16,5 @@ C:\Games\Kavehnegar\Kavehnegar.Core.Application\bin\Debug\net8.0\Kavehnegar.Core
 C:\Games\Kavehnegar\Kavehnegar.Core.Application\bin\Debug\net8.0\Kavehnegar.Shared.Framework.pdb
 C:\Games\Kavehnegar\Kavehnegar.Core.Application\obj\Debug\net8.0\Kavehnegar.Core.Application.csproj.AssemblyReference.cache
 C:\Games\Kavehnegar\Kavehnegar.Core.Application\obj\Debug\net8.0\Kavehnegar.Core.Application.csproj.CopyComplete
+C:\Games\Kavehnegar\Kavehnegar.Core.Application\bin\Debug\net8.0\Kavehnegar.External.Infrastructure.dll
+C:\Games\Kavehnegar\Kavehnegar.Core.Application\bin\Debug\net8.0\Kavehnegar.External.Infrastructure.pdb

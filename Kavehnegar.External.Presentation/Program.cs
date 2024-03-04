@@ -18,7 +18,8 @@ namespace Kavehnegar.External.Presentation
             var configuration = builder.Configuration;
             // Add services to the container.
             var applicationAssembly = typeof(Kavehnegar.Core.Application.AssemblyReference).Assembly;
-
+            builder.Services.AddStackExchangeRedisCache(redisOptions =>
+                redisOptions.Configuration = configuration["ConnectionStrings:RedisCache"]);
             builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(applicationAssembly));
             builder.Services.AddDbContext<KavehnegarDbContext>(builder =>
             builder.UseNpgsql(configuration["ConnectionStrings:PostgresDb"]));
