@@ -6,6 +6,7 @@ using Kavehnegar.Shared.Framework.Presentation;
 using Kavehnegar.Core.Application.BlogPost.Commands.UpdateBlogPostCommand;
 using Kavehnegar.Core.Application.BlogPost.Queries;
 using Kavehnegar.Core.Application.BlogPost.Queries.GetBlogPostByIdQuery;
+using Kavehnegar.Core.Application.BlogPost.Commands.DeleteBlogPostCommand;
 namespace Kavehnegar.External.Presentation.Controllers.BlogPost
 {
     public class BlogPostController : ApiController
@@ -42,6 +43,20 @@ namespace Kavehnegar.External.Presentation.Controllers.BlogPost
         public async Task<IActionResult> UpdateBlogPost([FromBody] UpdateBlogPostRequest request, CancellationToken cancellationToken)
         {
             var command = request.Adapt<UpdateBlogPostCommand>();
+
+            var webinarId = await Sender.Send(command, cancellationToken);
+
+            var result = new CommandResult(isSuccess: true, message: webinarId.ToString(), errorMessage: null);
+            return Ok(result);
+        }
+
+        [HttpDelete]
+        [ProducesResponseType(typeof(Guid), StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+
+        public async Task<IActionResult> DeleteBlogPost([FromBody] DeleteBlogPostRequest request, CancellationToken cancellationToken)
+        {
+            var command = request.Adapt<DeleteBlogPostCommand>();
 
             var webinarId = await Sender.Send(command, cancellationToken);
 
