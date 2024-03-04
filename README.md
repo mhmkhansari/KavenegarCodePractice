@@ -16,5 +16,6 @@ Here are some descriptions about what I did in this practice:
 10. MediatR and Mapster libraries are used for mapping controllers to corresponding handlers
 11. Validation in application layer is implemented using FluentValidation library
 12. Global exception handling mechanism is implemented as middleware
+13. CQRS pattern that I implemented can facilitate horizontal scaling, but due to stateful nature of the service, implemnting it in practice may be beyond the scope of this code
 
 I hope you find the results compelling :)
