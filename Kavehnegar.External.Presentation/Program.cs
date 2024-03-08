@@ -2,11 +2,19 @@
 using Kavehnegar.Core.Domain.BlogPost;
 using Kavehnegar.Core.Domain.User;
 using Kavehnegar.External.Infrastructure;
+using Kavehnegar.External.Infrastructure.MessageBroker;
 using Kavehnegar.External.Infrastructure.Repositories;
 using Kavehnegar.Shared.Framework.Infrastructure;
+using MassTransit;
+using MassTransit.Configuration;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using Microsoft.Extensions.DependencyInjection;
+
 using System.Reflection;
 using static System.Net.Mime.MediaTypeNames;
+using Kavehnegar.Shared.Framework.Application;
 
 namespace Kavehnegar.External.Presentation
 {
@@ -18,6 +26,31 @@ namespace Kavehnegar.External.Presentation
             var configuration = builder.Configuration;
             // Add services to the container.
             var applicationAssembly = typeof(Kavehnegar.Core.Application.AssemblyReference).Assembly;
+
+            builder.Services.Configure<MessageBrokerSettings>(
+                builder.Configuration.GetSection("MessageBroker"));
+            builder.Services.AddAuthorization();
+            builder.Services.AddAuthentication(IdentityConstants.ApplicationScheme)
+                .AddBearerToken(IdentityConstants.BearerScheme);
+            builder.Services.AddIdentityCore<IdentityUser>()
+                .AddEntityFrameworkStores<KavehnegarDbContext>()
+                .AddApiEndpoints();
+                
+            builder.Services.AddSingleton(sp => 
+            sp.GetRequiredService<IOptions<MessageBrokerSettings>>().Value);
+            builder.Services.AddMassTransit(options =>
+            {
+                options.SetKebabCaseEndpointNameFormatter();
+                options.UsingRabbitMq((context, configurator) =>
+                {
+                    MessageBrokerSettings settings = context.GetRequiredService<MessageBrokerSettings>();
+                    configurator.Host(new Uri(settings.Host), h =>
+                    {
+                        h.Username(settings.Username);
+                        h.Password(settings.Password);
+                    });
+                });
+            });
             builder.Services.AddStackExchangeRedisCache(redisOptions =>
                 redisOptions.Configuration = configuration["ConnectionStrings:RedisCache"]);
             builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(applicationAssembly));
@@ -28,7 +61,7 @@ namespace Kavehnegar.External.Presentation
             builder.Services.AddScoped<IBlogPostRepository, BlogPostRepository>();
             builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddTransient<ExceptionHandlingMiddleware>();
-
+            builder.Services.AddTransient<IEventBus, EventBus>();
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -41,6 +74,7 @@ namespace Kavehnegar.External.Presentation
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
+                app.MapIdentityApi<User>();
             }
             app.EnsureDatabase();
             app.UseMiddleware<ExceptionHandlingMiddleware>();

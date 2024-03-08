@@ -10,8 +10,8 @@ namespace Kavehnegar.Core.Domain.User
     public sealed class User : AggregateRoot<UserId>
     {
         public Username username { get; private set; }
-
-        protected User() { }
+        public User() { }
+        //protected User() { }
         public User(UserId id, Username _username) 
         {
             Id = id;

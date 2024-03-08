@@ -1,4 +1,5 @@
 ﻿using Kavehnegar.Core.Domain.BlogPost;
+using Kavehnegar.Core.Domain.BlogPost.Events;
 using Kavehnegar.Core.Domain.User;
 using Kavehnegar.Shared.Framework.Application;
 using Kavehnegar.Shared.Framework.Infrastructure;
@@ -8,11 +9,12 @@ namespace Kavehnegar.Core.Application.BlogPost.Commands.CreateBlogPostCommand
     {
         private readonly IBlogPostRepository _blogPostRepository;
         private readonly IUnitOfWork _unitOfWork;
-
-        public CreateBlogPostCommandHandler(IBlogPostRepository blogPostRepository, IUnitOfWork unitOfWork)
+        private readonly IEventBus _eventBus;
+        public CreateBlogPostCommandHandler(IBlogPostRepository blogPostRepository, IUnitOfWork unitOfWork, IEventBus eventBus)
         {
             _blogPostRepository = blogPostRepository;
             _unitOfWork = unitOfWork;
+            _eventBus = eventBus;
         }
 
         public async Task<Guid> Handle(CreateBlogPostCommand request, CancellationToken cancellationToken)
@@ -25,6 +27,11 @@ namespace Kavehnegar.Core.Application.BlogPost.Commands.CreateBlogPostCommand
             blogPost.SetDescription(blogPostDescription);
             _blogPostRepository.Insert(blogPost);
             await _unitOfWork.Commit(cancellationToken);
+            await _eventBus.PublishAsync(new BlogPostCreated 
+            {
+                Id = blogPostId,
+                Title = blogPostTitle
+            },cancellationToken);
             return blogPostId.Value;
 
         }

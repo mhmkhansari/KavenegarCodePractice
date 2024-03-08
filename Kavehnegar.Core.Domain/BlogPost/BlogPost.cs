@@ -25,8 +25,8 @@ namespace Kavehnegar.Core.Domain.BlogPost
             //Raise event since object creation alters domain state
             Apply(new Events.BlogPostCreated
             {
-                Id = id.Value,
-                AuthorId = _authorId.Value,
+                Id = id.Value
+                
             });
 
             Id = id;
@@ -44,7 +44,7 @@ namespace Kavehnegar.Core.Domain.BlogPost
         }
         public void SetDescription(BlogPostDescription description)
         {
-            Apply(new Events.DescriptionChanged()
+            Apply(new Events.BlogPostDescriptionChanged
             {
                 OldValue = this?.Description ?? "",
                 NewValue = description

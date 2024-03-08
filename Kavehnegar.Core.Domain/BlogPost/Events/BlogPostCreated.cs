@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Kavehnegar.Core.Domain.BlogPost.Events
 {
-    internal class BlogPostCreated
+    public record BlogPostCreated
     {
+        public Guid Id { get; init; }
+        public string Title { get; init; } = string.Empty;
     }
 }

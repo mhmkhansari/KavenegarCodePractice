@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kavehnegar.Shared.Framework")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1ddd730927aff882076185a358612efd9489a3f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kavehnegar.Shared.Framework")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kavehnegar.Shared.Framework")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

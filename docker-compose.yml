@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  kavehnegar.external.presentation:
+    image: ${DOCKER_REGISTRY-}kavehnegarexternalpresentation
+    build:
+      context: .
+      dockerfile: Kavehnegar.External.Presentation\Dockerfile
+    ports:
+    - "5000:5000"
+    - "5001:5001"
+  kavehnegar.database:
+    image: postgres
+    container_name: kavehnegar.database
+    environment:
+     - POSTGRES_DB=Kavenegar
+     - POSTGRES_USER=postgres
+     - POSTGRES_PASSWORD=123123123 
+       
