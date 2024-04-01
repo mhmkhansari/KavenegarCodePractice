@@ -32,6 +32,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kavehnegar.Core.Application
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{B134091E-A94C-43F0-9CDC-1C9912412BA3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTests", "..\IntegrationTests\IntegrationTests.csproj", "{AB0B2347-4D9F-434F-A2F0-F3A29295B266}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,6 +68,10 @@ Global
 		{B134091E-A94C-43F0-9CDC-1C9912412BA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B134091E-A94C-43F0-9CDC-1C9912412BA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B134091E-A94C-43F0-9CDC-1C9912412BA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB0B2347-4D9F-434F-A2F0-F3A29295B266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB0B2347-4D9F-434F-A2F0-F3A29295B266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB0B2347-4D9F-434F-A2F0-F3A29295B266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB0B2347-4D9F-434F-A2F0-F3A29295B266}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +86,7 @@ Global
 		{D14AA56D-2DA1-4F35-BFA6-4F3FE3E34B51} = {24D6B357-14A4-49D4-A252-6479BEC7520A}
 		{EEB0BEE6-C1E0-41FE-B9A0-F5FBB868A2D5} = {24D6B357-14A4-49D4-A252-6479BEC7520A}
 		{13537AC7-5EEE-4C26-B2DE-DF6714C84B85} = {1E835F19-F6BA-4E64-82DE-B12ABB7A9E04}
+		{AB0B2347-4D9F-434F-A2F0-F3A29295B266} = {18BF2F74-1436-447D-9CDD-F405B8BF2BC3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E6F8E6E6-BDCD-425A-99ED-DC56BCC191BB}
