@@ -1721,11 +1721,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pc\\Source\\Repos\\KavenegarCodePractice\\Kavehnegar.Core.Application\\Kavehnegar.Core.Application.csproj",
+      "projectUniqueName": "C:\\Users\\pc\\source\\repos\\KavenegarCodePractice\\Kavehnegar.Core.Application\\Kavehnegar.Core.Application.csproj",
       "projectName": "Kavehnegar.Core.Application",
-      "projectPath": "C:\\Users\\pc\\Source\\Repos\\KavenegarCodePractice\\Kavehnegar.Core.Application\\Kavehnegar.Core.Application.csproj",
+      "projectPath": "C:\\Users\\pc\\source\\repos\\KavenegarCodePractice\\Kavehnegar.Core.Application\\Kavehnegar.Core.Application.csproj",
       "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pc\\Source\\Repos\\KavenegarCodePractice\\Kavehnegar.Core.Application\\obj\\",
+      "outputPath": "C:\\Users\\pc\\source\\repos\\KavenegarCodePractice\\Kavehnegar.Core.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1747,11 +1747,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\pc\\Source\\Repos\\KavenegarCodePractice\\Kavehnegar.Core.Domain\\Kavehnegar.Core.Domain.csproj": {
-              "projectPath": "C:\\Users\\pc\\Source\\Repos\\KavenegarCodePractice\\Kavehnegar.Core.Domain\\Kavehnegar.Core.Domain.csproj"
+            "C:\\Users\\pc\\source\\repos\\KavenegarCodePractice\\Kavehnegar.Core.Domain\\Kavehnegar.Core.Domain.csproj": {
+              "projectPath": "C:\\Users\\pc\\source\\repos\\KavenegarCodePractice\\Kavehnegar.Core.Domain\\Kavehnegar.Core.Domain.csproj"
             },
-            "C:\\Users\\pc\\Source\\Repos\\KavenegarCodePractice\\Kavehnegar.External.Infrastructure\\Kavehnegar.External.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\pc\\Source\\Repos\\KavenegarCodePractice\\Kavehnegar.External.Infrastructure\\Kavehnegar.External.Infrastructure.csproj"
+            "C:\\Users\\pc\\source\\repos\\KavenegarCodePractice\\Kavehnegar.External.Infrastructure\\Kavehnegar.External.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\pc\\source\\repos\\KavenegarCodePractice\\Kavehnegar.External.Infrastructure\\Kavehnegar.External.Infrastructure.csproj"
             }
           }
         }
@@ -1760,6 +1760,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1795,7 +1800,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

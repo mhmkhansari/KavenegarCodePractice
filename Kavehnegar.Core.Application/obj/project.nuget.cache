@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D+nNQgOSlv7NoYrc4Zb2JbtRHVNWH4P41GPSWy7XBbuQSyceE0ZcxwUmoHMmTSF1cbRxPUlJZ8yCyPBK+pm4Xw==",
+  "dgSpecHash": "D2hnsUKutzPq7yib3MYaToUJhVBu8o8/3WCS8op5ZD8E2Yxp9QomuqUoWw4Cah9wW3eyx6xEbEqj9fLObELYmg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pc\\Source\\Repos\\KavenegarCodePractice\\Kavehnegar.Core.Application\\Kavehnegar.Core.Application.csproj",
+  "projectFilePath": "C:\\Users\\pc\\source\\repos\\KavenegarCodePractice\\Kavehnegar.Core.Application\\Kavehnegar.Core.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pc\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
