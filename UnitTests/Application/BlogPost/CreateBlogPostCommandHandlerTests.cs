@@ -7,19 +7,22 @@ using System.Text;
 using System.Threading.Tasks;
 using Moq;
 using Kavehnegar.Core.Application.BlogPost.Commands.CreateBlogPostCommand;
+using Kavehnegar.Shared.Framework.Application;
 namespace UnitTests.Application.BlogPost
 {
     public class CreateBlogPostCommandHandlerTests
     {
         private readonly Mock<IBlogPostRepository> _mockBlogPostRepository;
         private readonly Mock<IUnitOfWork> _mockUnitOfWork;
+        private readonly Mock<IEventBus> _mockEventBus;
         private readonly CreateBlogPostCommandHandler _handler;
 
         public CreateBlogPostCommandHandlerTests()
         {
             _mockBlogPostRepository = new Mock<IBlogPostRepository>();
             _mockUnitOfWork = new Mock<IUnitOfWork>();
-            _handler = new CreateBlogPostCommandHandler(_mockBlogPostRepository.Object, _mockUnitOfWork.Object);
+            _mockEventBus = new Mock<IEventBus>();
+            _handler = new CreateBlogPostCommandHandler(_mockBlogPostRepository.Object, _mockUnitOfWork.Object, _mockEventBus.Object);
         }
 
         [Fact]
