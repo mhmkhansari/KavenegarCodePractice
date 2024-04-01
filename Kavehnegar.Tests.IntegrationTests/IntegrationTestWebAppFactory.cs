@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Testcontainers.PostgreSql;
 
-namespace IntegrationTests
+namespace Kavehnegar.Tests.IntegrationTests
 {
     public class IntegrationTestWebAppFactory : WebApplicationFactory<Program>, IAsyncLifetime
     {

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Moq;
 using Kavehnegar.Core.Application.BlogPost.Commands.CreateBlogPostCommand;
 using Kavehnegar.Shared.Framework.Application;
-namespace UnitTests.Application.BlogPost
+namespace Kavehnegar.Tests.UnitTests.Application.BlogPost
 {
     public class CreateBlogPostCommandHandlerTests
     {

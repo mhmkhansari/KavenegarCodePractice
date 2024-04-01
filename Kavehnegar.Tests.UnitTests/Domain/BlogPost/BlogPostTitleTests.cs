@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UnitTests.Domain.BlogPost
+namespace Kavehnegar.Tests.UnitTests.Domain.BlogPost
 {
     public class TitleTests
     {

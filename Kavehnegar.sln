@@ -20,7 +20,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kavenegar.Tests.UnitTests", "UnitTests\Kavenegar.Tests.UnitTests.csproj", "{E9A32007-A185-4F11-A2ED-EB9D3E204F8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kavehnegar.Tests.UnitTests", "Kavehnegar.Tests.UnitTests\Kavehnegar.Tests.UnitTests.csproj", "{E9A32007-A185-4F11-A2ED-EB9D3E204F8A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{24D6B357-14A4-49D4-A252-6479BEC7520A}"
 EndProject
@@ -32,7 +32,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kavehnegar.Core.Application
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{B134091E-A94C-43F0-9CDC-1C9912412BA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTests", "IntegrationTests\IntegrationTests.csproj", "{7549C5F3-B5E3-4F8D-8636-EB5BBEBE2CF9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kavehnegar.Tests.IntegrationTests", "Kavehnegar.Tests.IntegrationTests\Kavehnegar.Tests.IntegrationTests.csproj", "{7549C5F3-B5E3-4F8D-8636-EB5BBEBE2CF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xunit;
-namespace UnitTests.Domain.User
+namespace Kavehnegar.Tests.UnitTests.Domain.User
 {
     public class UsernameTests
     {

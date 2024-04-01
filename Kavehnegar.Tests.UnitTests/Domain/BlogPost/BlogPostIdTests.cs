@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Kavehnegar.Core.Domain.BlogPost;
-namespace UnitTests.Domain.BlogPost
+namespace Kavehnegar.Tests.UnitTests.Domain.BlogPost
 {
     public class BlogPostIdTests
     {
