@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IntegrationTests
 {
-    internal class BaseIntegrationTest
+    public abstract class BaseIntegrationTest
     {
     }
 }
