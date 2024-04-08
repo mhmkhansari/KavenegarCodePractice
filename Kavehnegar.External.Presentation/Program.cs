@@ -11,10 +11,13 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.DependencyInjection;
-
+using OpenTelemetry;
+using OpenTelemetry.Instrumentation.AspNetCore;
 using System.Reflection;
 using static System.Net.Mime.MediaTypeNames;
 using Kavehnegar.Shared.Framework.Application;
+using OpenTelemetry.Metrics;
+using OpenTelemetry.Logs;
 
 namespace Kavehnegar.External.Presentation
 {
@@ -38,6 +41,25 @@ namespace Kavehnegar.External.Presentation
                 
             builder.Services.AddSingleton(sp => 
             sp.GetRequiredService<IOptions<MessageBrokerSettings>>().Value);
+            builder.Services.AddOpenTelemetry()
+                .WithMetrics(metric =>
+                {
+                    metric.AddMeter("Microsoft.AspNetCore.Hosting");
+                    metric.AddMeter("Microsoft.AspNetCore.Server.Kestrel");
+                    metric.AddMeter("System.Net.Http");
+                    metric.AddPrometheusExporter();
+                });
+            var loggerFactory = LoggerFactory.Create(builder =>
+            {
+                builder.AddOpenTelemetry(options =>
+                {
+                    options.AddOtlpExporter();
+                });
+            });
+            builder.Logging.AddOpenTelemetry(options =>
+            {
+                options.AddOtlpExporter();
+            });
             builder.Services.AddMassTransit(options =>
             {
                 options.SetKebabCaseEndpointNameFormatter();
@@ -84,7 +106,7 @@ namespace Kavehnegar.External.Presentation
 
 
             app.MapControllers();
-
+            app.MapPrometheusScrapingEndpoint();
             app.Run();
         }
     }
